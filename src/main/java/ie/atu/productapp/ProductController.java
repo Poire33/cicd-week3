@@ -1,6 +1,7 @@
 package ie.atu.productapp;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,5 +21,12 @@ public class ProductController {
     public List getProduct()
     {
         return productList;
+    }
+
+
+    @PostMapping("addProduct")
+    public String addProduct(Product product)
+    {
+        return "Product added";
     }
 }
