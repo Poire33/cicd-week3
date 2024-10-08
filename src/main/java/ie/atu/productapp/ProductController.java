@@ -28,4 +28,20 @@ public class ProductController {
         productList.add(product);
         return ResponseEntity.ok(productList);
     }
+
+    @PutMapping("updateProduct")
+    public List updateProduct()
+    {
+        // Update product code here
+
+        return productList;
+    }
+
+    @DeleteMapping("removeProduct")
+    public List removeProduct()
+    {
+        // Remove product code here
+
+        return productList;
+    }
 }
